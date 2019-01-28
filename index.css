@@ -109,11 +109,16 @@ a{
   font-size: 24px;
 }
 .div_coffee > img{
+  transition: all 0.3s;
   grid-area: image;
   border: 3px solid orange;
   border-radius: 20px;
   width: 300px;
   height: 300px;
+}
+.div_coffee > img:hover{
+  padding: 0px;
+  margin: 20px 0px 0px 20px;
 }
 
 .line{
@@ -122,4 +127,18 @@ a{
   border: 3px solid;
   border-radius: 10px;
   border-color: rgb(111, 78, 55);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(111, 78, 55);
 }
