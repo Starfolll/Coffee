@@ -1,0 +1,125 @@
+*{
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Indie Flower', cursive;
+}
+
+head, html{
+  padding: 0px;
+  margin: 0px;
+}
+
+:root{
+  --grad: linear-gradient(rgb(111, 78, 55),black);
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+}
+
+a{
+  align-self: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header{
+  transition: all 0.3s;
+  background-color: rgb(111, 78, 55);
+  margin: 0px;
+  height: 100px;
+  display: flex;
+  border-bottom: 5px solid orange;
+}
+.header:hover{
+  padding-bottom: 25px;
+}
+.header_h1{
+  align-self: center;
+  padding: 20px 20px 20px 20px;
+  font-size: 40px;
+  color: orange;
+  background-color: black;
+  text-decoration: underline;
+  border-radius: 50px;
+  text-decoration-color: rgb(111, 78, 55);
+}
+
+.header_coffee_img{
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  transition: all 0.3s;
+  align-self: center;
+  padding: 0px 10px 0px 3px;
+  background-color: black;
+  border-radius: 10px;
+  border-bottom: 0px solid orange;
+}
+.header_coffee_img:hover{
+  cursor: pointer;
+  margin: 0px;
+  margin-right: 3px;
+  padding: 5px 15px;
+  border-radius: 25%;
+  border-bottom: 10px solid orange;
+  border-radius: 10px;
+}
+.header_coffee_img > img{
+  padding: 0px;
+  margin: 0px;
+  align-self: center;
+  width: 50px;
+}
+.header_coffee_img > p{
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  color: orange;
+  text-decoration: underline;
+  text-decoration-style: 3px solid;
+  text-decoration-color: rgb(111, 78, 55);
+}
+
+.div_coffee{
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: 75px 1fr;
+  grid-template-areas:
+    "h1 image"
+    "description image";
+  background-color: black;
+}
+.div_coffee > h1{
+  text-align: center;
+  grid-area: h1;
+  color: rgb(111, 78, 55);
+  text-decoration: underline;
+  text-decoration-color: orange;
+  font-size: 42px;
+}
+.div_coffee > p{
+  padding-top: 30px;
+  background-image: var(--grad, rgb(111, 78, 55));
+  border-radius: 50px;
+  grid-area: description;
+  color: orange;
+  text-align: center;
+  font-size: 24px;
+}
+.div_coffee > img{
+  grid-area: image;
+  border: 3px solid orange;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.line{
+  padding: 0px;
+  margin: 0px 50px 0px 50px;
+  border: 3px solid;
+  border-radius: 10px;
+  border-color: rgb(111, 78, 55);
+}
