@@ -32,6 +32,11 @@ a{
   height: 100px;
   display: flex;
   border-bottom: 5px solid orange;
+
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
 }
 .header:hover{
   padding-bottom: 25px;
